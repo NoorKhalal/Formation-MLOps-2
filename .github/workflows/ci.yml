@@ -20,5 +20,5 @@ jobs:
       - name: Run Linter
         run: uv run ruff check --output-format=github --target-version=py39
       - name: Run tests
-        run: run: pytest
+        run:  pytest
 
