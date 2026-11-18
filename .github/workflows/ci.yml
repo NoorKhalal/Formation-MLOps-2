@@ -21,4 +21,7 @@ jobs:
         run: uv run ruff check --output-format=github --target-version=py39
       - name: Run tests
         run:  uv run pytest
+      - name: Check code formatting with Ruff
+        run: uv ruff format --diff --target-version=py39
+        continue-on-error: true
 
